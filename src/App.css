@@ -1,0 +1,149 @@
+
+.auth-wrapper{
+  height:100vh;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient( to right,#ffffff,#c893c8);
+
+}
+
+.auth-card{
+  width:360px;
+  background:white;
+  padding:30px;
+  border-radius:18px;
+  box-shadow:0 20px 60px rgba(0,0,0,0.08);
+}
+
+.secure-badge{
+  width:max-content;
+  padding:6px 14px;
+  font-size:12px;
+  border-radius:20px;
+  background:#e9f7ef;
+  color:#e7aeda;
+  margin-bottom:10px;
+}
+
+.green-text{
+  color:#ff00ae;
+  font-size: bold;
+}
+
+.sub-text{
+  font-size:13px;
+  margin-bottom:20px;
+  color:#555;
+ 
+  justify-content: center;
+  
+}
+
+
+.auth-form{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+input{
+  padding:12px;
+  border-radius:10px;
+  border:1px solid #ddd;
+  outline:none;
+}
+
+input:focus{
+  border-color:#ef67e8;
+}
+
+.password-box{
+  display:flex;
+  align-items:center;
+  border:1px solid #ddd;
+  border-radius:10px;
+  padding-right:10px;
+}
+
+.password-box input{
+  border:none;
+  flex:2;
+}
+
+.eye{
+  cursor:pointer;
+}
+
+.primary-btn{
+  margin-top:10px;
+  padding:12px;
+  border:none;
+  border-radius:10px;
+  background:#bb99cd;
+  color:white;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.primary-btn:hover{
+  opacity:.9;
+}
+
+.center{
+  text-align:center;
+}
+
+.link-green{
+  color:#dd8eda;
+  font-weight:600;
+  cursor:pointer;
+}
+
+.muted{
+  font-size:13px;
+  color:#b79ab2;
+  text-align:center;
+  margin-top:5px;
+}
+
+.divider{
+  height:1px;
+  background:#eee;
+  margin:15px 0;
+}
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .primary-btn {
+    font-size: 14px;
+  }
+}
+
+.pop{ animation:pop .5s ease; }
+
+@keyframes pop{
+  from{transform:scale(.9); opacity:0;}
+  to{transform:scale(1); opacity:1;}
+}
+
+@keyframes slideLeft{
+  from{transform:translateX(80px); opacity:0;}
+  to{transform:translateX(0); opacity:1;}
+}
+
+@keyframes slideRight{
+  from{transform:translateX(-80px); opacity:0;}
+  to{transform:translateX(0); opacity:1;}
+}
+@keyframes slideUp{
+  from{transform:translateY(80px); opacity:0;}
+  to{transform:translateY(0); opacity:1;}
+}
